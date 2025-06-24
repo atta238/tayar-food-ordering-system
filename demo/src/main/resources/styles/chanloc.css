@@ -1,0 +1,18 @@
+.gover_selector{
+    -fx-background-color:  #3B3F34;
+    -fx-border-color:  #9BFE03;
+    -fx-border-radius: 26px;
+    -fx-border-width: 5px;
+}
+
+.gover_selector .label{
+    -fx-text-fill:#E9FAC8;
+    -fx-font-size: 22px;
+}
+.gover_selector .arrow{
+    -fx-background-color: #9BFE03;
+}
+
+#choice-box-popup-menu{
+    -fx-background-color:#3B3F34;
+}

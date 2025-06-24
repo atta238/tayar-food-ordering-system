@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="944" prefWidth="1555" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.LoginController">
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <ImageView fitHeight="944.0" fitWidth="1555.0" layoutX="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <image>
+            <Image url="@../images/Desktop.png" />
+        </image>
+        <effect>
+            <ColorAdjust />
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <viewport>
+            <Rectangle2D />
+        </viewport>
+    </ImageView>
+    <ImageView fitHeight="127.4" fitWidth="152.4" layoutX="700.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="794.8574432373047" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="702.6000061035156" AnchorPane.topAnchor="32.0">
+        <image>
+            <Image url="@../images/logo-1.png" />
+        </image>
+    </ImageView>
+    <Text fill="#9fff05" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;SF Pro Display&quot;; -fx-font-weight: 700; -fx-line-spacing: 4.129px;" text="TAYAR" textAlignment="CENTER" wrappingWidth="169.1015625" AnchorPane.leftAnchor="692.0" AnchorPane.topAnchor="142.0">
+        <font>
+            <Font name="System Bold" size="52.0" />
+        </font>
+    </Text>
+    <Text fill="#e9fac8" layoutX="881.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register" wrappingWidth="143.4375" AnchorPane.leftAnchor="881.0" AnchorPane.topAnchor="209.0">
+        <font>
+            <Font size="40.0" />
+        </font>
+    </Text>
+    <Button fx:id="registerpage_btn" layoutX="879.0" layoutY="210.0" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" opacity="0.0" prefHeight="42.0" prefWidth="150.0" textAlignment="CENTER" textFill="#9fff05" AnchorPane.leftAnchor="879.0" AnchorPane.topAnchor="221.0">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <font>
+            <Font size="40.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Text fill="#9fff05" layoutX="548.0" layoutY="247.1640625" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="99.14453125" AnchorPane.rightAnchor="908.0" AnchorPane.topAnchor="209.0">
+        <font>
+            <Font size="40.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+    </Text>
+    <Button fx:id="loginpage_btn" layoutX="547.0" layoutY="225.0" minHeight="0.0" minWidth="0.0" mnemonicParsing="false" opacity="0.0" prefHeight="42.0" prefWidth="99.0" textAlignment="CENTER" AnchorPane.topAnchor="221.0">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <font>
+            <Font size="40.0" />
+        </font>
+    </Button>
+    <Rectangle arcHeight="15.0" arcWidth="5.0" fill="#9aff03" height="9.6" layoutX="878.0" layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="129.0" AnchorPane.leftAnchor="534.0" AnchorPane.topAnchor="269.0" />
+    <TextField fx:id="email_fild" layoutX="593.0" layoutY="316.0" prefHeight="65.323" prefWidth="366.129" promptText="E-mail" styleClass="box" stylesheets="@../styles/Fields_boxes.css" AnchorPane.leftAnchor="594.0" AnchorPane.topAnchor="342.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </TextField>
+    <PasswordField fx:id="pass_fild" layoutX="586.0" layoutY="406.0" prefHeight="65.323" prefWidth="366.129" promptText="Password" styleClass="box" stylesheets="@../styles/Fields_boxes.css" AnchorPane.leftAnchor="594.0" AnchorPane.topAnchor="442.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </PasswordField>
+    <Button fx:id="login_btn" alignment="CENTER" layoutX="770.0" layoutY="777.0" mnemonicParsing="false" prefHeight="76.226" prefWidth="267.0" styleClass="button-1" stylesheets="@../styles/Button_box.css" text="Login" textAlignment="CENTER" textFill="#3b3f34" wrapText="true" AnchorPane.rightAnchor="644.0" AnchorPane.topAnchor="685.0">
+        <font>
+            <Font name="System Bold" size="37.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button fx:id="customertype_btn" layoutX="605.0" layoutY="557.0" mnemonicParsing="false" prefHeight="37.323" prefWidth="37.129" styleClass="button-1" stylesheets="@../styles/Button_box.css" AnchorPane.rightAnchor="889.52" AnchorPane.topAnchor="550.0">
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Label fx:id="customertype_lbl" layoutX="566.0" layoutY="633.0" text="Customer" textFill="#9bfe03" AnchorPane.rightAnchor="850.0" AnchorPane.topAnchor="596.259765625">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font>
+   </Label>
+    <Button fx:id="deliverytype_btn" layoutX="742.0" layoutY="556.0" mnemonicParsing="false" prefHeight="37.323" prefWidth="37.129" styleClass="button-2" stylesheets="@../styles/Button_box.css" AnchorPane.rightAnchor="742.74" AnchorPane.topAnchor="550.0">
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Label fx:id="deliverytype_lbl" layoutX="566.0" layoutY="639.0" text="Delivery" textFill="#e9fac8" AnchorPane.rightAnchor="713.0" AnchorPane.topAnchor="596.0">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font>
+   </Label>
+    <Button fx:id="admintype_btn" layoutX="893.0" layoutY="556.0" mnemonicParsing="false" prefHeight="37.323" prefWidth="37.129" styleClass="button-2" stylesheets="@../styles/Button_box.css" AnchorPane.rightAnchor="595.97" AnchorPane.topAnchor="550.0">
+        <cursor>
+          <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Label fx:id="admintype_lbl" layoutX="534.0" layoutY="693.0" text="Admin" textFill="#e9fac8" AnchorPane.rightAnchor="579.0" AnchorPane.topAnchor="596.259765625">
+      <font>
+         <Font name="System Bold" size="22.0" />
+      </font>
+   </Label>
+    <Label fx:id="Error_lbl" alignment="CENTER" layoutX="929.0" layoutY="694.0" prefHeight="42.0" prefWidth="162.0" text="Invalid data :(" textAlignment="CENTER" textFill="#f00000" visible="false">
+        <font>
+            <Font name="System Bold Italic" size="22.0" />
+        </font>
+    </Label>
+</AnchorPane>

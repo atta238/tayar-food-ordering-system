@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="944" prefWidth="1555" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.Customer.restaurantview">
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <ImageView fitHeight="944.0" fitWidth="1555.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <image>
+            <Image url="@../../images/Desktop2.png" />
+        </image>
+        <effect>
+            <ColorAdjust />
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <viewport>
+            <Rectangle2D />
+        </viewport>
+    </ImageView>
+    <ImageView fitHeight="127.4" fitWidth="152.4" layoutX="700.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="17.0">
+        <image>
+            <Image url="@../../images/logo-1.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="48.0" fitWidth="64.0" layoutX="260.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="278.0" AnchorPane.topAnchor="140.0">
+        <image>
+            <Image url="@../../images/undo_icon.png" />
+        </image></ImageView>
+    <Button fx:id="undo_btn" layoutX="182.0" layoutY="169.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="64.0" AnchorPane.leftAnchor="278.0" AnchorPane.topAnchor="140.0">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Text fx:id="text3_lbl" fill="#e9fac8" layoutX="1370.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL" AnchorPane.leftAnchor="1370.0" AnchorPane.topAnchor="366.7060546875">
+      <font>
+         <Font size="29.0" />
+      </font></Text>
+   <Label fx:id="RestaurantName_lbl" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="243.0" text="RestaurantName" textFill="#9bfe03" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="243.0">
+      <font>
+         <Font name="System Bold" size="38.0" />
+      </font>
+   </Label>
+   <Label fx:id="Governate_lbl" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="25.0" layoutY="310.0" text="Cairo , abasia" textFill="#e9fac8" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="310.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="Catogery_lbl" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="25.0" layoutY="368.0" text="Fried Chicken" textAlignment="CENTER" textFill="#e9fac8" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="368.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+    <TextField fx:id="QTY_fild1" alignment="CENTER" layoutX="398.0" layoutY="363.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="398.0" AnchorPane.topAnchor="363.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </TextField>
+   <TextField fx:id="QTY_fild5" alignment="CENTER" layoutX="398.0" layoutY="599.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="398.0" AnchorPane.topAnchor="599.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="QTY_fild6" alignment="CENTER" layoutX="617.0" layoutY="599.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="617.0" AnchorPane.topAnchor="599.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="QTY_fild2" alignment="CENTER" layoutX="617.0" layoutY="360.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="617.0" AnchorPane.topAnchor="360.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="QTY_fild3" alignment="CENTER" layoutX="834.0" layoutY="361.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="834.0" AnchorPane.topAnchor="361.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="QTY_fild7" alignment="CENTER" layoutX="834.0" layoutY="599.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="834.0" AnchorPane.topAnchor="599.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="QTY_fild4" alignment="CENTER" layoutX="1051.0" layoutY="358.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="1051.0" AnchorPane.topAnchor="358.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="QTY_fild8" alignment="CENTER" layoutX="1051.0" layoutY="599.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="188.0" style="-fx-background-radius: 26;" styleClass="box2" stylesheets="@../../styles/Fields_boxes.css" text="0" visible="false" AnchorPane.leftAnchor="1051.0" AnchorPane.topAnchor="599.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <Label fx:id="itemname_lbl1" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="440.0" layoutY="221.0" text="Big Mac" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="221.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl2" alignment="CENTER" contentDisplay="CENTER" layoutX="657.0" layoutY="221.0" text="Big Mac" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="657.0" AnchorPane.topAnchor="221.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl3" alignment="CENTER" contentDisplay="CENTER" layoutX="874.0" layoutY="221.0" text="Big Mac" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="874.0" AnchorPane.topAnchor="221.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl4" alignment="CENTER" contentDisplay="CENTER" layoutX="1091.0" layoutY="221.0" text="Big Mac" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="1091.0" AnchorPane.topAnchor="221.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl5" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="417.0" layoutY="456.0" text="Big Mac" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="440.0" AnchorPane.topAnchor="456.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl6" alignment="CENTER" contentDisplay="CENTER" layoutX="630.0" layoutY="456.0" text="Big Mac" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="657.0" AnchorPane.topAnchor="456.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl7" alignment="CENTER" contentDisplay="CENTER" layoutX="842.0" layoutY="456.0" text="Big Mac" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="874.0" AnchorPane.topAnchor="456.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="itemname_lbl8" alignment="CENTER" contentDisplay="CENTER" layoutX="1056.0" layoutY="456.0" text="Big Mac" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="1091.0" AnchorPane.topAnchor="456.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl1" alignment="CENTER" contentDisplay="CENTER" layoutX="465.0" layoutY="264.0" text="12$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="465.0" AnchorPane.topAnchor="264.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl2" alignment="CENTER" contentDisplay="CENTER" layoutX="679.0" layoutY="260.0" text="100$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="679.0" AnchorPane.topAnchor="264.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl3" alignment="CENTER" contentDisplay="CENTER" layoutX="880.0" layoutY="260.0" text="1000$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="264.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl4" alignment="CENTER" contentDisplay="CENTER" layoutX="1108.0" layoutY="260.0" text="100$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="1108.0" AnchorPane.topAnchor="264.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl5" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="455.0" layoutY="505.0" text="100$" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="455.0" AnchorPane.topAnchor="505.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl6" alignment="CENTER" contentDisplay="CENTER" layoutX="666.0" layoutY="499.0" text="100$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="672.0" AnchorPane.topAnchor="505.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl7" alignment="CENTER" contentDisplay="CENTER" layoutX="887.0" layoutY="506.0" text="100$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="887.0" AnchorPane.topAnchor="505.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="price_lbl8" alignment="CENTER" contentDisplay="CENTER" layoutX="1092.0" layoutY="499.0" text="100$" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="1108.0" AnchorPane.topAnchor="505.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Line endX="400.0" layoutX="1119.0" layoutY="528.0" rotate="90.0" startX="-100.0" stroke="#e9fac8" />
+   <Text fx:id="text1_lbl" fill="#e9fac8" layoutX="1325.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIRM YOUR" wrappingWidth="176.3999938964845">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+   <Text fx:id="text2_lbl" fill="#e9fac8" layoutX="1370.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDER" wrappingWidth="84.60693359375">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+   <Line endX="182.0" layoutX="1370.0" layoutY="354.0" startX="-100.0" stroke="#e9fac8" />
+   <Line endX="182.0" layoutX="1370.0" layoutY="277.0" startX="-100.0" stroke="#e9fac8" />
+    <Button fx:id="confirm_btn" alignment="CENTER" layoutX="1313.0" layoutY="594.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CONFIRM" textAlignment="CENTER" textFill="#3b3f34" wrapText="true" AnchorPane.leftAnchor="1313.0" AnchorPane.topAnchor="594.0">
+        <font>
+            <Font name="System Bold" size="25.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Label fx:id="totalp_lbl" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="1394.0" layoutY="411.0" text="0$" textFill="#e9fac8" AnchorPane.leftAnchor="1394.0" AnchorPane.topAnchor="411.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+    <TextField fx:id="address_fild" layoutX="1285.0" layoutY="493.0" prefHeight="55.0" prefWidth="244.0" promptText="Address" styleClass="box" stylesheets="@../../styles/Fields_boxes.css" AnchorPane.leftAnchor="1285.0" AnchorPane.topAnchor="493.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </TextField>
+    <Label fx:id="nomenu_lbl" layoutX="550.0" layoutY="524.0" prefHeight="58.0" prefWidth="386.0" text="THERE IS NO MENU" textAlignment="CENTER" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="550.0" AnchorPane.topAnchor="524.0">
+        <font>
+            <Font name="System Bold" size="40.0" />
+        </font>
+    </Label>
+   <Button fx:id="cancel_btn" alignment="CENTER" layoutX="1313.0" layoutY="676.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" textAlignment="CENTER" textFill="#3b3f34" wrapText="true" AnchorPane.leftAnchor="1313.0">
+      <font>
+         <Font name="System Bold" size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="Add_btn" alignment="CENTER" layoutX="701.0" layoutY="759.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="188.0" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="ADD" textAlignment="CENTER" textFill="#3b3f34" wrapText="true">
+      <font>
+         <Font name="System Bold" size="25.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label fx:id="error_lbl" alignment="CENTER" layoutX="1319.0" layoutY="453.0" prefHeight="30.0" prefWidth="188.0" text="Enter your address" textAlignment="CENTER" textFill="RED" visible="false">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+    <Label fx:id="error_lbl1" alignment="CENTER" layoutX="1272.0" layoutY="453.0" prefHeight="30.0" prefWidth="268.0" text="ERROR ! PRESS CANCEL" textAlignment="CENTER" textFill="RED" visible="false">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+    <Label fx:id="success_lbl" alignment="CENTER" layoutX="1319.0" layoutY="453.0" prefHeight="30.0" prefWidth="188.0" text="Order Done :)" textAlignment="CENTER" textFill="#9bfe03" visible="false">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+   <Label fx:id="type1_lbl" layoutX="460.0" layoutY="307.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="307.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type2_lbl" layoutX="680.0" layoutY="307.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="307.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type3_lbl" layoutX="897.0" layoutY="307.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="307.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type4_lbl" layoutX="1114.0" layoutY="307.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="307.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type5_lbl" layoutX="458.0" layoutY="544.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="544.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type6_lbl" layoutX="678.0" layoutY="544.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="544.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type7_lbl" layoutX="888.0" layoutY="544.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="544.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+   <Label fx:id="type8_lbl" layoutX="1112.0" layoutY="544.0" text="Type" textFill="#e9fac8" visible="false" AnchorPane.topAnchor="544.0">
+      <font>
+         <Font size="29.0" />
+      </font>
+   </Label>
+    <Label fx:id="error_number_lbl" alignment="CENTER" layoutX="505.0" layoutY="715.0" prefHeight="30.0" prefWidth="578.0" text="ERROR ! YOU MUST ENTER NUMBERS" textAlignment="CENTER" textFill="RED" visible="false">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+</AnchorPane>

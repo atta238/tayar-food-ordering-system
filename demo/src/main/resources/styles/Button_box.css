@@ -1,0 +1,22 @@
+.button-1{
+    -fx-background-color: #9BFE03;
+    -fx-background-radius: 50px;
+}
+.button-2{
+    -fx-background-color: #3B3F34;
+    -fx-background-radius: 50px;
+    -fx-border-color: #E9FAC8;
+    -fx-border-radius: 26px;
+    -fx-border-width: 3px;
+}
+.button-1 .label{
+    -fx-font-size: 22px;
+    -fx-text-fill: #E9FAC8;
+}
+.button-1 .arrow{
+    -fx-background-color: #3B3F34;
+    -fx-font-size: 10px;
+}
+#choice-box-popup-menu{
+    -fx-background-color:#3B3F34;
+}

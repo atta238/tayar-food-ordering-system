@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="944" prefWidth="1555" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.Admin.addrestaurant">
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <ImageView fitHeight="944.0" fitWidth="1555.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.1445465087890625" AnchorPane.topAnchor="0.0">
+        <image>
+            <Image url="@../../images/Desktop2.png" />
+        </image>
+        <effect>
+            <ColorAdjust />
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <viewport>
+            <Rectangle2D />
+        </viewport>
+    </ImageView>
+    <ImageView fitHeight="48.0" fitWidth="64.0" layoutX="260.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="278.0" AnchorPane.topAnchor="140.0">
+        <image>
+            <Image url="@../../images/undo_icon.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="undo_btn" layoutX="182.0" layoutY="169.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="64.0" AnchorPane.leftAnchor="278.0" AnchorPane.topAnchor="140.0">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <ImageView fitHeight="127.4" fitWidth="152.4" layoutX="700.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="794.8574432373047" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="702.6000061035156" AnchorPane.topAnchor="32.0">
+        <image>
+            <Image url="@../../images/logo-1.png" />
+        </image>
+    </ImageView>
+    <Text fill="#9dff03" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;SF Pro Display&quot;; -fx-font-weight: 700; -fx-line-spacing: 4.129px;" text="TAYAR" textAlignment="CENTER" wrappingWidth="169.1015625" AnchorPane.leftAnchor="692.0" AnchorPane.topAnchor="142.0">
+        <font>
+            <Font name="System Bold" size="52.0" />
+        </font>
+    </Text>
+    <Text fill="#e9fac8" layoutX="576.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD A RESTAURANT" textAlignment="CENTER" wrappingWidth="399.14454650878906" AnchorPane.leftAnchor="576.0" AnchorPane.rightAnchor="580.0" AnchorPane.topAnchor="210.8359375">
+        <font>
+            <Font size="40.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+    </Text>
+    <TextField fx:id="catogery_fild" disable="true" layoutX="624.0" layoutY="543.0" prefHeight="65.323" prefWidth="366.129" promptText="Catogery" styleClass="box" stylesheets="@../../styles/Fields_boxes.css" AnchorPane.leftAnchor="624.0" AnchorPane.topAnchor="543.0">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </TextField>
+    <ChoiceBox fx:id="gov_selector" layoutX="183.0" layoutY="420.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="65.323" prefWidth="366.0" styleClass="gover_selector" stylesheets="@../../styles/Choice_boxes.css" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="420.0" />
+    <ChoiceBox fx:id="area_selector" layoutX="183.0" layoutY="533.0" prefHeight="65.323" prefWidth="366.0" styleClass="gover_selector" stylesheets="@../../styles/Choice_boxes.css" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="533.0" />
+    <Button fx:id="addrestaurant_btn" alignment="CENTER" layoutX="219.0" layoutY="665.0" mnemonicParsing="false" prefHeight="76.226" prefWidth="267.0" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="ADD" textAlignment="CENTER" textFill="#3b3f34" wrapText="true" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="1069.0" AnchorPane.topAnchor="665.0">
+        <font>
+            <Font name="System Bold" size="37.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Label fx:id="Error_lbl" alignment="CENTER" layoutX="271.0" layoutY="612.0" prefHeight="42.0" prefWidth="162.0" text="Invalid data :(" textAlignment="CENTER" textFill="#f00000" visible="false">
+        <font>
+            <Font name="System Bold Italic" size="22.0" />
+        </font>
+    </Label>
+   <TextField fx:id="restname_fild1" layoutX="178.0" layoutY="307.0" prefHeight="65.323" prefWidth="366.129" promptText="Restaurant Name" styleClass="box" stylesheets="@../../styles/Fields_boxes.css" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="307.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="price_fild" disable="true" layoutX="1055.0" layoutY="420.0" prefHeight="65.323" prefWidth="366.129" promptText="Price$" styleClass="box" stylesheets="@../../styles/Fields_boxes.css" AnchorPane.leftAnchor="1083.0" AnchorPane.topAnchor="410.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="itemname_fild" disable="true" layoutX="1091.0" layoutY="360.0" prefHeight="65.323" prefWidth="366.129" promptText="Item Name" styleClass="box" stylesheets="@../../styles/Fields_boxes.css" AnchorPane.leftAnchor="1083.0" AnchorPane.topAnchor="307.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+   <Button fx:id="additem_btn" alignment="CENTER" disable="true" layoutX="1142.0" layoutY="668.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="230.0" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="ADD ITEM" textAlignment="CENTER" textFill="#3b3f34" wrapText="true" AnchorPane.leftAnchor="1142.0" AnchorPane.topAnchor="668.0">
+      <font>
+         <Font name="System Bold" size="34.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="addcategory_btn1" alignment="CENTER" disable="true" layoutX="624.0" layoutY="667.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="330.0" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="ADD CATEGORY" textAlignment="CENTER" textFill="#3b3f34" wrapText="true">
+      <font>
+         <Font name="System Bold" size="34.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <TextField fx:id="type_fild" disable="true" layoutX="1093.0" layoutY="420.0" prefHeight="65.323" prefWidth="366.129" promptText="Type" styleClass="box" stylesheets="@../../styles/Fields_boxes.css" AnchorPane.leftAnchor="1083.0" AnchorPane.topAnchor="510.0">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </TextField>
+    <Label fx:id="success_lbl" alignment="CENTER" layoutX="31.0" layoutY="612.0" prefHeight="42.0" prefWidth="557.0" text="A RESTAURANT HAS BEEN ADDED SUCCESSFULLY" textAlignment="CENTER" textFill="#9bfe03" visible="false">
+        <font>
+            <Font name="System Bold Italic" size="22.0" />
+        </font>
+    </Label>
+   <Label fx:id="Error_lbl2" alignment="CENTER" layoutX="702.0" layoutY="612.0" prefHeight="42.0" prefWidth="162.0" text="Invalid data :(" textAlignment="CENTER" textFill="#f00000" visible="false">
+      <font>
+         <Font name="System Bold Italic" size="22.0" />
+      </font>
+   </Label>
+   <Label fx:id="Error_lbl3" alignment="CENTER" layoutX="1185.0" layoutY="612.0" prefHeight="42.0" prefWidth="162.0" text="Invalid data :(" textAlignment="CENTER" textFill="#f00000" visible="false">
+      <font>
+         <Font name="System Bold Italic" size="22.0" />
+      </font>
+   </Label>
+   <Label fx:id="success_lbl2" alignment="CENTER" layoutX="566.0" layoutY="488.0" prefHeight="42.0" prefWidth="500.0" text="A CATEGORY HAS BEEN ADDED SUCCESSFULLY" textAlignment="CENTER" textFill="#9bfe03" visible="false">
+      <font>
+         <Font name="System Bold Italic" size="22.0" />
+      </font>
+   </Label>
+   <Label fx:id="success_lbl3" alignment="CENTER" layoutX="1066.0" layoutY="612.0" prefHeight="42.0" prefWidth="449.0" text="AN ITEM HAS BEEN ADDED SUCCESSFULLY" textAlignment="CENTER" textFill="#9bfe03" visible="false">
+      <font>
+         <Font name="System Bold Italic" size="22.0" />
+      </font>
+   </Label>
+</AnchorPane>

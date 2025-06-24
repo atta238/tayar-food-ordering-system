@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="944" prefWidth="1555" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controllers.Customer.viewmyorders">
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <ImageView fitHeight="944.0" fitWidth="1555.0" layoutX="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <image>
+            <Image url="@../../images/Desktop2.png" />
+        </image>
+        <effect>
+            <ColorAdjust />
+        </effect>
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <viewport>
+            <Rectangle2D />
+        </viewport>
+    </ImageView>
+    <ImageView fitHeight="127.4" fitWidth="152.4" layoutX="700.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="55.0" AnchorPane.rightAnchor="17.0">
+        <image>
+            <Image url="@../../images/logo-1.png" />
+        </image>
+    </ImageView>
+   <ImageView fitHeight="84.0" fitWidth="64.0" layoutX="260.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="186.0" AnchorPane.topAnchor="172.0">
+      <image>
+         <Image url="@../../images/undo_icon.png" />
+      </image></ImageView>
+   <Text fill="#e9fac8" layoutX="507.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Orders" AnchorPane.leftAnchor="660.0" AnchorPane.topAnchor="71.0">
+      <font>
+         <Font name="System Bold" size="40.0" />
+      </font>
+   </Text>
+   <Button fx:id="undo_btn" layoutX="182.0" layoutY="169.0" mnemonicParsing="false" opacity="0.0" prefHeight="54.0" prefWidth="71.0" AnchorPane.leftAnchor="182.0" AnchorPane.topAnchor="169.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <TableView fx:id="vieworder_table" layoutX="199.0" layoutY="303.0" prefHeight="359.0" prefWidth="1206.0" styleClass="table_view" stylesheets="@../../styles/Tableview.css" AnchorPane.leftAnchor="199.0" AnchorPane.topAnchor="303.0">
+     <columns>
+       <TableColumn fx:id="OrderID_column" prefWidth="75.0" text="OrderID" />
+       <TableColumn fx:id="namerest_column" prefWidth="151.19996643066406" text="Restaurant" />
+         <TableColumn fx:id="price_column" prefWidth="75.0" text="Total Price" />
+         <TableColumn fx:id="Status_column" prefWidth="131.20001220703125" text="Status of Order" />
+     </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+   </TableView>
+   <Label fx:id="noorder_lbl" layoutX="97.0" layoutY="424.0" text="YOU HAVE NO ORDERS" textAlignment="CENTER" textFill="#e9fac8" AnchorPane.leftAnchor="570.0" AnchorPane.topAnchor="570.0">
+      <font>
+         <Font name="System Bold" size="40.0" />
+      </font>
+   </Label>
+   <Text fx:id="el7taelso8nna" fill="#e9fac8" layoutX="1398.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="|" textAlignment="CENTER">
+      <font>
+         <Font size="37.0" />
+      </font>
+   </Text>
+   <Button fx:id="cancel1_btn" layoutX="1420.0" layoutY="344.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="344.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font></Button>
+   <Button fx:id="cancel2_btn" layoutX="1420.0" layoutY="392.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="392.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="cancel3_btn" layoutX="1420.0" layoutY="450.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="440.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="cancel4_btn" layoutX="1421.0" layoutY="498.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="488.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="cancel5_btn" layoutX="1417.0" layoutY="551.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="536.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="cancel6_btn" layoutX="1417.0" layoutY="609.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="584.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="cancel7_btn" layoutX="1417.0" layoutY="643.0" mnemonicParsing="false" style="-fx-background-color: red;" styleClass="button-1" stylesheets="@../../styles/Button_box.css" text="CANCEL" AnchorPane.leftAnchor="1420.0" AnchorPane.topAnchor="632.0">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Button>
+</AnchorPane>
